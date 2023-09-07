@@ -1,22 +1,25 @@
-.home{
+.home {
     background-color: var(--first-color);
     padding: 9rem 0 2rem;
     height: 100vh;
     display: grid;
 
-    &__container{
+    &__container {
         display: grid;
         align-content: center;
         row-gap: 2.5rem;
     }
-    &__data{
+
+    &__data {
         text-align: center;
     }
-    &__title{
+
+    &__title {
         font-size: var(--biggest-font-size);
         margin: .75rem 0;
     }
-    &__button{
+
+    &__button {
         margin-top: 2rem;
         display: inline-block;
         background-color: var(--text-color);
@@ -24,18 +27,22 @@
         padding: .80rem 1.5rem;
         border-radius: 3rem;
         transition: .4s;
-        &:hover{
+
+        &:hover {
             box-shadow: 0 4px 12px hsla(38, 69%, 8%, .2);
         }
     }
-    &__img img{
+
+    &__img img {
         width: 20vw;
         animation: flotar 1.8s infinite alternate
     }
-    &__img{
+
+    &__img {
         justify-self: center;
     }
-    &__footer{
+
+    &__footer {
         display: flex;
         justify-content: center;
         column-gap: .5rem;
@@ -45,15 +52,16 @@
 
 
 
-    
+
 }
 
 
 @keyframes flotar {
-    0%{
+    0% {
         transform: translateY(0);
     }
-    100%{
+
+    100% {
         transform: translateY(15px);
     }
 }
